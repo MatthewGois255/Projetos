@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* A property 'max-width' especifica a largura máxima da tag main. Caso o elemento dentro de main tenha uma largura menor que a descrita (no caso, 300px), a largura se limita à do elemento (como eu adicionei um 'flex-direction: column' abaixo, quem determinaria essa largura seria o input, que já vem com 165px de largura). 'width: 100%' tem a função de obrigar o elemento a ocupar a totalidade da sua largura especificada, adicionando espaços ao lado */
+
+/* Embora ainda esteja configurado em body, esteticamente não configurar a largura máxima anula a centralização, visto que qualquer espaço aos lados são retirados */
+
+.divSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* esse gap é o espaço entre os elemento alinhados em coluna */
+
+input {
+    padding: 5px;
+    outline: none;
+}
+
+/* esse padding do input é interno */
